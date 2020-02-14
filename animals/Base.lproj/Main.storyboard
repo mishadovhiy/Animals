@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="duJ-QU-FLg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LcZ-7w-ftg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbD-qy-esw" userLabel="CatView">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Q-XM-75R">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Cat">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ey-C1-yeN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="Iz2-DW-AIw">
+                                                        <rect key="frame" x="20" y="10" width="85" height="137"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.34115403890000001" green="0.78952354189999996" blue="0.9760549664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Iz2-DW-AIw" firstAttribute="leading" secondItem="lbD-qy-esw" secondAttribute="leading" constant="20" id="8DN-7z-2ZN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Y0Q-XM-75R" secondAttribute="bottom" id="8PP-2k-evd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Y0Q-XM-75R" secondAttribute="trailing" id="AXd-Nl-CA5"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Iz2-DW-AIw" secondAttribute="bottom" constant="20" id="DlA-Ai-hW5">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstItem="Y0Q-XM-75R" firstAttribute="leading" secondItem="lbD-qy-esw" secondAttribute="leading" id="UfZ-pX-CDf"/>
+                                                    <constraint firstItem="Y0Q-XM-75R" firstAttribute="top" secondItem="lbD-qy-esw" secondAttribute="top" id="fU3-fp-881"/>
+                                                    <constraint firstItem="Iz2-DW-AIw" firstAttribute="top" secondItem="lbD-qy-esw" secondAttribute="top" constant="10" id="iXC-KS-Sw6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Iz2-DW-AIw" secondAttribute="trailing" constant="20" id="tzx-MI-eB8"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6o-aP-Hsl" userLabel="DogView">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="167"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQe-kp-HhB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Dog">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Hu-Fk-byv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-y9-wHO">
+                                                        <rect key="frame" x="20" y="10" width="85" height="137"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="EZa-y9-wHO" firstAttribute="leading" secondItem="w6o-aP-Hsl" secondAttribute="leading" constant="20" id="1Yy-FO-7bC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IQe-kp-HhB" secondAttribute="trailing" id="5RM-hT-a1A"/>
+                                                    <constraint firstItem="EZa-y9-wHO" firstAttribute="top" secondItem="w6o-aP-Hsl" secondAttribute="top" constant="10" id="U1q-6K-Uec"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EZa-y9-wHO" secondAttribute="trailing" constant="20" id="XEU-S4-Ci3"/>
+                                                    <constraint firstItem="IQe-kp-HhB" firstAttribute="leading" secondItem="w6o-aP-Hsl" secondAttribute="leading" id="cGD-vN-zGq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EZa-y9-wHO" secondAttribute="bottom" constant="20" id="gU7-gT-01t">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="bottom" secondItem="IQe-kp-HhB" secondAttribute="bottom" id="qUB-vh-ztR"/>
+                                                    <constraint firstItem="IQe-kp-HhB" firstAttribute="top" secondItem="w6o-aP-Hsl" secondAttribute="top" id="rAv-xf-al2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-Dz-cd6" userLabel="BirdView">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="167"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-vt-K1M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Bird"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jOi-Kq-4Py"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="Dp0-y7-5Ks">
+                                                        <rect key="frame" x="20" y="10" width="85" height="137"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.95058661700000002" green="0.56662297250000004" blue="0.286131829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="t9h-vt-K1M" secondAttribute="bottom" id="3uf-6l-dP4"/>
+                                                    <constraint firstItem="t9h-vt-K1M" firstAttribute="top" secondItem="kyi-Dz-cd6" secondAttribute="top" id="6M2-iw-twM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="t9h-vt-K1M" secondAttribute="trailing" id="M9u-ic-3kk"/>
+                                                    <constraint firstItem="Dp0-y7-5Ks" firstAttribute="top" secondItem="kyi-Dz-cd6" secondAttribute="top" constant="10" id="NJE-Dc-huI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Dp0-y7-5Ks" secondAttribute="trailing" constant="20" id="Rn4-3D-n9x"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Dp0-y7-5Ks" secondAttribute="bottom" constant="20" id="n2e-rP-S8X">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstItem="Dp0-y7-5Ks" firstAttribute="leading" secondItem="kyi-Dz-cd6" secondAttribute="leading" constant="20" id="rf7-uM-kkJ"/>
+                                                    <constraint firstItem="t9h-vt-K1M" firstAttribute="leading" secondItem="kyi-Dz-cd6" secondAttribute="leading" id="tZw-ou-NJH"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jg8-aR-1xE">
+                                        <rect key="frame" x="0.0" y="167" width="375" height="166.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDJ-ge-opu" userLabel="ElephantView">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="166.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZG-hR-FCh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="166.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="15" maxX="10" maxY="15"/>
+                                                        <state key="normal" title="Elephant"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSh-ZS-fMb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="gJV-yS-yKi">
+                                                        <rect key="frame" x="20" y="10" width="85" height="136.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93113321069999999" green="0.33693867919999998" blue="0.49590772389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="ZZG-hR-FCh" firstAttribute="top" secondItem="CDJ-ge-opu" secondAttribute="top" id="DQ8-aR-O1k"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZZG-hR-FCh" secondAttribute="bottom" id="W1n-XP-Lb5"/>
+                                                    <constraint firstItem="gJV-yS-yKi" firstAttribute="top" secondItem="CDJ-ge-opu" secondAttribute="top" constant="10" id="bNF-Ni-2eV"/>
+                                                    <constraint firstItem="ZZG-hR-FCh" firstAttribute="leading" secondItem="CDJ-ge-opu" secondAttribute="leading" id="qev-X6-fPT"/>
+                                                    <constraint firstItem="gJV-yS-yKi" firstAttribute="leading" secondItem="CDJ-ge-opu" secondAttribute="leading" constant="20" id="uPS-QP-O2K"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gJV-yS-yKi" secondAttribute="trailing" constant="20" id="vhw-wR-xgv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gJV-yS-yKi" secondAttribute="bottom" constant="20" id="ybJ-Yk-Hmt">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="trailing" secondItem="ZZG-hR-FCh" secondAttribute="trailing" id="zGj-Pf-JgY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oP0-2v-4Ge" userLabel="HorseView">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="166.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-16-G35">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="166.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Horse"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aix-XA-DjR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horse" translatesAutoresizingMaskIntoConstraints="NO" id="Qee-oR-6UY">
+                                                        <rect key="frame" x="20" y="10" width="85" height="136.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.511971806661778" green="0.81317417512690349" blue="0.27784747561326317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Qee-oR-6UY" secondAttribute="bottom" constant="20" id="4Z0-ms-fCt">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="bottom" secondItem="y4o-16-G35" secondAttribute="bottom" id="6nU-yz-fLF"/>
+                                                    <constraint firstItem="y4o-16-G35" firstAttribute="top" secondItem="oP0-2v-4Ge" secondAttribute="top" id="LYP-yi-279"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Qee-oR-6UY" secondAttribute="trailing" constant="20" id="OLX-Yr-6G1"/>
+                                                    <constraint firstItem="Qee-oR-6UY" firstAttribute="top" secondItem="oP0-2v-4Ge" secondAttribute="top" constant="10" id="Zqc-F5-zlW"/>
+                                                    <constraint firstItem="y4o-16-G35" firstAttribute="leading" secondItem="oP0-2v-4Ge" secondAttribute="leading" id="b2o-gm-SDX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="y4o-16-G35" secondAttribute="trailing" id="fOs-fH-9bM"/>
+                                                    <constraint firstItem="Qee-oR-6UY" firstAttribute="leading" secondItem="oP0-2v-4Ge" secondAttribute="leading" constant="20" id="w84-gK-hCj"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Kq-Mq-xx4" userLabel="SnakeView">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="166.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njG-fj-Gdx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="166.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Snake"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQl-1z-9OL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snake" translatesAutoresizingMaskIntoConstraints="NO" id="MVJ-j2-Hcn">
+                                                        <rect key="frame" x="20" y="10" width="85" height="136.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.73041784759999995" green="0.54076379539999997" blue="0.97515970470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="MVJ-j2-Hcn" secondAttribute="trailing" constant="20" id="2JQ-eB-2HV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="njG-fj-Gdx" secondAttribute="trailing" id="6sE-Cp-pjC"/>
+                                                    <constraint firstItem="MVJ-j2-Hcn" firstAttribute="leading" secondItem="2Kq-Mq-xx4" secondAttribute="leading" constant="20" id="IAC-Aj-uit"/>
+                                                    <constraint firstItem="njG-fj-Gdx" firstAttribute="leading" secondItem="2Kq-Mq-xx4" secondAttribute="leading" id="PMU-2J-Kun"/>
+                                                    <constraint firstAttribute="bottom" secondItem="njG-fj-Gdx" secondAttribute="bottom" id="SUd-sW-6bz"/>
+                                                    <constraint firstItem="MVJ-j2-Hcn" firstAttribute="top" secondItem="2Kq-Mq-xx4" secondAttribute="top" constant="10" id="Urd-wV-niA"/>
+                                                    <constraint firstItem="njG-fj-Gdx" firstAttribute="top" secondItem="2Kq-Mq-xx4" secondAttribute="top" id="Vg5-4u-4Xe"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MVJ-j2-Hcn" secondAttribute="bottom" constant="20" id="qte-10-bPL">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kMy-PK-AJ6">
+                                        <rect key="frame" x="0.0" y="333.5" width="375" height="167"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Bi-ZB-uFi" userLabel="LambView">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="na4-wl-2F4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Lamb"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9tg-GH-cbk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheep" translatesAutoresizingMaskIntoConstraints="NO" id="whZ-r7-3fj">
+                                                        <rect key="frame" x="20" y="10" width="85" height="137"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94294136760000002" green="0.62311214209999999" blue="0.98351150750000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="na4-wl-2F4" firstAttribute="leading" secondItem="8Bi-ZB-uFi" secondAttribute="leading" id="1n1-pW-qXc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="whZ-r7-3fj" secondAttribute="bottom" constant="20" id="7LW-ia-DuP">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="trailing" secondItem="whZ-r7-3fj" secondAttribute="trailing" constant="20" id="GMM-7G-SGh"/>
+                                                    <constraint firstItem="na4-wl-2F4" firstAttribute="top" secondItem="8Bi-ZB-uFi" secondAttribute="top" id="Xp4-PM-MOO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="na4-wl-2F4" secondAttribute="bottom" id="bYI-aF-eTs"/>
+                                                    <constraint firstItem="whZ-r7-3fj" firstAttribute="leading" secondItem="8Bi-ZB-uFi" secondAttribute="leading" constant="20" id="mGe-f3-Pms"/>
+                                                    <constraint firstAttribute="trailing" secondItem="na4-wl-2F4" secondAttribute="trailing" id="pJ7-NF-iUa"/>
+                                                    <constraint firstItem="whZ-r7-3fj" firstAttribute="top" secondItem="8Bi-ZB-uFi" secondAttribute="top" constant="10" id="u8H-gi-Sbf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJw-Qg-Xfq" userLabel="OwlView">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="167"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SF-NL-ZtO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Owl"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEF-ZN-6dr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="hrP-q3-lzh">
+                                                        <rect key="frame" x="20" y="30" width="85" height="107"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.44111052160000003" green="0.63788568970000004" blue="0.97220259899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="hrP-q3-lzh" secondAttribute="bottom" constant="30" id="QzK-54-3cy">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="15"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="trailing" secondItem="hrP-q3-lzh" secondAttribute="trailing" constant="20" id="SbM-Wa-BCL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9SF-NL-ZtO" secondAttribute="bottom" id="Wfy-P9-G6u"/>
+                                                    <constraint firstItem="9SF-NL-ZtO" firstAttribute="top" secondItem="TJw-Qg-Xfq" secondAttribute="top" id="biM-J4-fAH"/>
+                                                    <constraint firstItem="hrP-q3-lzh" firstAttribute="leading" secondItem="TJw-Qg-Xfq" secondAttribute="leading" constant="20" id="j8H-JU-UGn"/>
+                                                    <constraint firstItem="9SF-NL-ZtO" firstAttribute="leading" secondItem="TJw-Qg-Xfq" secondAttribute="leading" id="k8O-fh-NYl"/>
+                                                    <constraint firstItem="hrP-q3-lzh" firstAttribute="top" secondItem="TJw-Qg-Xfq" secondAttribute="top" constant="30" id="lFm-mr-jck">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="trailing" secondItem="9SF-NL-ZtO" secondAttribute="trailing" id="pjJ-Gc-7p4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p46-iQ-VwH" userLabel="MonkeyView">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="167"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drK-Rp-oGy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="167"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="15" maxX="10" maxY="15"/>
+                                                        <state key="normal" title="Monkey"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YFq-uq-YBN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="88Y-Mz-Yej">
+                                                        <rect key="frame" x="20" y="10" width="85" height="137"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94012802839999998" green="0.30870425346236219" blue="0.25245698025466845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="drK-Rp-oGy" firstAttribute="leading" secondItem="p46-iQ-VwH" secondAttribute="leading" id="3Z1-lm-dgb"/>
+                                                    <constraint firstItem="88Y-Mz-Yej" firstAttribute="top" secondItem="p46-iQ-VwH" secondAttribute="top" constant="10" id="Blx-er-XFa"/>
+                                                    <constraint firstItem="drK-Rp-oGy" firstAttribute="top" secondItem="p46-iQ-VwH" secondAttribute="top" id="Irx-uB-1Mm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="88Y-Mz-Yej" secondAttribute="bottom" constant="20" id="KVu-Hs-4h6">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="bottom" secondItem="drK-Rp-oGy" secondAttribute="bottom" id="LUo-Ab-dCG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="drK-Rp-oGy" secondAttribute="trailing" id="P1i-89-GwA"/>
+                                                    <constraint firstItem="88Y-Mz-Yej" firstAttribute="leading" secondItem="p46-iQ-VwH" secondAttribute="leading" constant="20" id="R4m-ZY-gFr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="88Y-Mz-Yej" secondAttribute="trailing" constant="20" id="m0U-t8-U73"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-8E-NpW">
+                                        <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je6-ix-wns" userLabel="CowView">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="166.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="10" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJY-gC-jRb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="166.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Cow"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z7t-BZ-cEu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cow" translatesAutoresizingMaskIntoConstraints="NO" id="WUe-g0-QfP">
+                                                        <rect key="frame" x="20" y="10" width="85" height="136.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.91745320429999999" green="0.7980160946" blue="0.13636073400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="WUe-g0-QfP" firstAttribute="leading" secondItem="Je6-ix-wns" secondAttribute="leading" constant="20" id="5yG-zE-daT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WUe-g0-QfP" secondAttribute="bottom" constant="20" id="BdI-rL-FDA">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstItem="EJY-gC-jRb" firstAttribute="leading" secondItem="Je6-ix-wns" secondAttribute="leading" id="CGL-fM-FFo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WUe-g0-QfP" secondAttribute="trailing" constant="20" id="FqT-Hd-Wj6"/>
+                                                    <constraint firstItem="WUe-g0-QfP" firstAttribute="top" secondItem="Je6-ix-wns" secondAttribute="top" constant="10" id="Jmt-n5-vDR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EJY-gC-jRb" secondAttribute="trailing" id="NW8-dP-0pm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EJY-gC-jRb" secondAttribute="bottom" id="P3M-mI-ax6"/>
+                                                    <constraint firstItem="EJY-gC-jRb" firstAttribute="top" secondItem="Je6-ix-wns" secondAttribute="top" id="a69-tU-UKa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3m-hr-TrW" userLabel="LionView">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="166.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="11" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfi-0Z-dRv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="166.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Lion"/>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOR-Va-Juv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="nCC-rC-6Ob">
+                                                        <rect key="frame" x="20" y="10" width="85" height="136.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92754483219999995" green="0.329708159" blue="0.67777341599999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="nCC-rC-6Ob" secondAttribute="bottom" constant="20" id="8C1-ew-3Y6">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstItem="nCC-rC-6Ob" firstAttribute="leading" secondItem="T3m-hr-TrW" secondAttribute="leading" constant="20" id="8rd-Yq-QIb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nCC-rC-6Ob" secondAttribute="trailing" constant="20" id="PKb-gs-oQO"/>
+                                                    <constraint firstItem="Qfi-0Z-dRv" firstAttribute="top" secondItem="T3m-hr-TrW" secondAttribute="top" id="QQo-4b-7YO"/>
+                                                    <constraint firstItem="Qfi-0Z-dRv" firstAttribute="leading" secondItem="T3m-hr-TrW" secondAttribute="leading" id="WVj-kp-uzc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Qfi-0Z-dRv" secondAttribute="bottom" id="ZhN-Ni-oi4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Qfi-0Z-dRv" secondAttribute="trailing" id="viu-Vv-kuu"/>
+                                                    <constraint firstItem="nCC-rC-6Ob" firstAttribute="top" secondItem="T3m-hr-TrW" secondAttribute="top" constant="10" id="wuH-9s-Tzi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3R-gF-xWX" userLabel="ChickenView">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="166.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="12" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSp-oO-Kro">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="166.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                        <state key="normal" title="Chicken">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lI5-yP-zTt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chicken" translatesAutoresizingMaskIntoConstraints="NO" id="e4w-Cd-ulL">
+                                                        <rect key="frame" x="20" y="10" width="85" height="136.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.35259676984008687" green="0.86381662436548223" blue="0.64124569934487397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="vSp-oO-Kro" secondAttribute="trailing" id="2oM-Vd-a14"/>
+                                                    <constraint firstItem="vSp-oO-Kro" firstAttribute="leading" secondItem="p3R-gF-xWX" secondAttribute="leading" id="Ejj-Og-lK0"/>
+                                                    <constraint firstItem="e4w-Cd-ulL" firstAttribute="leading" secondItem="p3R-gF-xWX" secondAttribute="leading" constant="20" id="af9-gc-UIw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="e4w-Cd-ulL" secondAttribute="bottom" constant="20" id="fLA-cw-iZJ">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    </constraint>
+                                                    <constraint firstItem="vSp-oO-Kro" firstAttribute="top" secondItem="p3R-gF-xWX" secondAttribute="top" id="ifE-Ed-Bm7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="e4w-Cd-ulL" secondAttribute="trailing" constant="20" id="mIU-Zz-1XJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vSp-oO-Kro" secondAttribute="bottom" id="qif-V2-9YQ"/>
+                                                    <constraint firstItem="e4w-Cd-ulL" firstAttribute="top" secondItem="p3R-gF-xWX" secondAttribute="top" constant="10" id="uZ5-92-YFL"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="duJ-QU-FLg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PMT-tY-ART"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="duJ-QU-FLg" secondAttribute="bottom" id="XPn-KN-8tz"/>
+                            <constraint firstItem="duJ-QU-FLg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="flg-iL-9M1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="duJ-QU-FLg" secondAttribute="trailing" id="s90-to-i2n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bird" width="96" height="94"/>
+        <image name="cat" width="115" height="120"/>
+        <image name="chicken" width="118" height="120"/>
+        <image name="cow" width="120" height="84"/>
+        <image name="dog" width="118" height="120"/>
+        <image name="elephant" width="120" height="84"/>
+        <image name="horse" width="120" height="106"/>
+        <image name="lion" width="120" height="111"/>
+        <image name="monkey" width="120" height="107"/>
+        <image name="owl" width="72" height="116"/>
+        <image name="sheep" width="120" height="109"/>
+        <image name="snake" width="120" height="102"/>
+    </resources>
+</document>
